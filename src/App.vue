@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen w-screen bg-indigo-50">
+    <div class="h-screen w-screen bg-indigo-50 px-2">
       <div class="bg-gradient-to-br from-indigo-400 to-indigo-700 text-center p-4 text-4xl lg:text-5xl text-indigo-50 mb-10 font-bold max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto shadow-xl rounded-b-xl">
           <Header />
       </div>
