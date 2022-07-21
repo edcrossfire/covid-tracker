@@ -5,6 +5,7 @@
       </div>
       <main v-if="!loading">
         <DataTitle :text="title" :dataDate="dataDate" />
+        <DataBoxes :stats="stats" />
       </main>
       <main class="flex flex-col items-center space-y-3" v-else>
         <div class="text-2xl">
@@ -19,11 +20,13 @@
 <script>
 import Header from "@/components/Header.vue"
 import DataTitle from "@/components/DataTitle.vue"
+import DataBoxes from "@/components/DataBoxes.vue"
 
 export default {
   components: {
     Header,
     DataTitle,
+    DataBoxes,
   },
   data() {
     return {
@@ -44,9 +47,9 @@ export default {
   },
   async created() {
     const data = await this.fetchCovidData()
-    this.dataDate = data.dataDate
+    this.dataDate = data.Date
     this.stats = data.Global
-    this.countries = data.countries
+    this.countries = data.Countries
     this.loading = false
   },
 }
