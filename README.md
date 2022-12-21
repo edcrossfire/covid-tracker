@@ -1,6 +1,4 @@
-# covid-tracker
-
-# An app built with VueJS that connects to an external COVID-19 data API feed.
+# covid-tracker (an app built with VueJS that connects to an external COVID-19 data API feed)
 
 ## Project setup
 ```
